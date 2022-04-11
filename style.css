@@ -642,17 +642,6 @@ input:hover, textarea:hover{
 
 /* SMALL SCREEN MOBILE PHONES */
 @media screen and (max-width: 380px) {
-    /* .icons{
-        display: none;
-    } */
-    /* .pages li{
-        padding: 20px 12px;
-    }
-
-    .brand-name{
-        margin-right: 5px;
-    } */
-
     .discount{
         margin-left: 15px;
         margin-right: 15px;
