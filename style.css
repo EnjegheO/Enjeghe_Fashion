@@ -292,6 +292,10 @@ i:hover{
     background-color: #34343451;
 }
 
+.top .bi-arrow-up{
+    color: #ec6200;
+}
+
 #footer{
     width: 100%;
     height: 30%;
@@ -340,6 +344,123 @@ i:hover{
     height: 20%;
     text-align: center;
     padding: 20px;
+}
+
+
+/* SHOP PAGE */
+
+#main{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#main > h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 30px;
+}
+
+.grid-item{
+    height: 100%;
+    margin: 10px;
+}
+
+.grid-item img{
+    width: 100%;
+    height: 80%;
+}
+
+.grid-item p{
+    font-size: 18px;
+}
+
+.cart-add{
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.grid-item span{
+    font-weight: bold;
+}
+
+.btn-hidden{
+    display: none;
+    padding-top: 30px;
+}
+
+/* CONTACT PAGE */
+.contact-box{
+    display: flex;
+    align-items: center;
+    background-color: #34343451;
+}
+.contact-image{
+    width: 50%;
+    height: 100%;
+}
+
+.contact-image img{
+    width: 100%;
+}
+
+.contact-form{
+    width: 50%;
+    font-size: 20px;
+    
+}
+
+.form-heading{
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px 5px;
+    margin: 10px 2px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+/* Styling of form components */
+input, textarea, select{
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Styles input placeholder */
+::placeholder{
+    font-family:  'Roboto', sans-serif;
+}
+
+input:hover, textarea:hover{
+    background-color: #f1f1f1;
+    color: #ffffff;
+}
+
+.submit{
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 
@@ -410,6 +531,43 @@ i:hover{
         margin: 17px;
     }
 
+    .hidden{
+        display: none;
+    }
+
+    .grid-container{
+        grid-template-columns: auto auto;
+        row-gap: 50px;
+    }
+
+    .btn-hidden{
+        display: block;
+    }
+
+    .contact-image{
+        display: none;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .form-heading{
+        display: none;
+    }
+
+    .submit{
+        width: 50%;
+    }
+
+    .contact-box{
+        padding: 20px 5px;
+    }
+
+    .contact-form form{
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -438,6 +596,20 @@ i:hover{
         border-radius: 10px;
         margin: 20px 0 10px;
     }
+
+    .hidden{
+        display: none;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+
+    .btn-hidden{
+        display: block;
+    }
+
 
 }
 
