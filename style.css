@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* General stylings */
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -48,29 +49,33 @@ a{
     width: 100%;
     height: 10%;
 }
+
 .nav-bar{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 5px;
+    overflow: hidden;
 }
-.nav-bar h1{
+.brand-name{
     font-size: 30px;
     font-weight: bold;
-    width: 30%;
+    width: 20%;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .pages{
     display: flex;
     flex-direction: row;
-    width: 40%;
+    justify-content: center;
+    width: 50%;
 }
 
 .pages li{
     list-style-type: none;
-    padding: 20px;
-    margin: 0px;
+    padding: 20px 5px;
+    margin: 5px;
 }
 
 .pages li a{
@@ -85,21 +90,25 @@ a{
 
 .icons{
     width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .icons a{
-    float: right;
     margin: 10px;
+    
 }
 
 i:hover{
     color: #ff8028;
 }
+
+/* Styling for the active page */
 .active{
     border-bottom: 2px solid white;
  }
 
-/*HERO*/
+/* HERO SECTION */
 
 #main{
     width: 100%;
@@ -112,8 +121,6 @@ i:hover{
     background-color: #f1f1f1;
     align-items:center;
     justify-content: space-between; 
-   
-    /* opacity: 0.8; */
 }
 
 .main-text{
@@ -123,8 +130,6 @@ i:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url("/images/bg_img2.jpg");
-    background-size: cover; */
 }
 
 .discount{
@@ -151,6 +156,7 @@ i:hover{
 .main-image{
     width: 50%;
     height: 100%;
+    object-fit: contain;
 }
 
 .main-image img{
@@ -158,7 +164,7 @@ i:hover{
     max-height: 50%;
 }
 
-/* NEW ARRIVALS*/
+/* NEW ARRIVALS SECTION*/
 .arrivals{
     background-color: #f1f1f1;
 }
@@ -180,7 +186,7 @@ i:hover{
 }
 
 .new-1:hover{
-    box-shadow: 10px 5px 5px #343434;
+    box-shadow: 5px 5px 5px #34343451;
 }
 
 .arrival-text{
@@ -189,7 +195,7 @@ i:hover{
     font-size: 30px;
     padding: 20px;
     font-weight: bold;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #000000;
 }
 
 .new-1 p{
@@ -203,7 +209,7 @@ i:hover{
     font-weight: bold;
 }
 
-/*CATEGORY*/
+/* CATEGORIES SECTION */
 .category{
     width: 100%;
     height: 30%;
@@ -232,7 +238,7 @@ i:hover{
 }
 
 .category-item:hover{
-    box-shadow: 10px 10px 5px #343434;
+    box-shadow: 5px 5px 5px #34343451;
 }
 
 .category-item img{
@@ -250,6 +256,7 @@ i:hover{
     color: #ffffff;
 }
 
+/* SIGN UP PROMPT SECTION */
 .new-customer{
     display: flex;
     flex-direction: column;
@@ -277,6 +284,7 @@ i:hover{
     font-size: 20px;
 }
 
+/* STYLING FOR TOP AND SEE MORE BUTTONS */
 .top{
     display: block;
     margin: 30px auto;
@@ -296,6 +304,7 @@ i:hover{
     color: #ec6200;
 }
 
+/* FOOTER */
 #footer{
     width: 100%;
     height: 30%;
@@ -309,7 +318,7 @@ i:hover{
     width: 100%;
     height: 80%;
     padding: 30px 5px;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid #343434;
 }
 
@@ -319,6 +328,7 @@ i:hover{
     font-size: 40px;
 }
 
+/* CONTACT PROMPT */
 .contact-btn{
    color: #ff8028;
    border-bottom: 2px solid #ec6200;
@@ -436,7 +446,7 @@ i:hover{
     
 }
 
-/* Styling of form components */
+/* FORM STYLING */
 input, textarea, select{
     margin: 10px 0;
     padding: 15px;
@@ -447,14 +457,13 @@ input, textarea, select{
 
 }
 
-/* Styles input placeholder */
+/* PLACEHOLDER STYLING */
 ::placeholder{
     font-family:  'Roboto', sans-serif;
 }
 
 input:hover, textarea:hover{
     background-color: #f1f1f1;
-    color: #ffffff;
 }
 
 .submit{
@@ -465,6 +474,7 @@ input:hover, textarea:hover{
 
 
 /*MEDIA QUERIES*/
+/* WIDE SCREEN  MOBILE PHONES AND TABLETS */
 @media screen and (max-width: 950px) {
     .pages li{
         padding: 15px 7px;
@@ -510,7 +520,7 @@ input:hover, textarea:hover{
     .footer-main h5{
         text-transform: uppercase;
         float: left;
-        font-size: 40px;
+        font-size: 30px;
         margin-right: 10px;
     }
     
@@ -570,28 +580,45 @@ input:hover, textarea:hover{
 
 }
 
-@media screen and (max-width: 500px){
-    .blog, .bi-cart, .bi-person, .footer-brand{
+/* MEDIUM SCREEN MOBILE PHONES */
+@media screen and (max-width: 550px){
+    .blog, .bi-person, .footer-brand{
         display: none;
     }
 
+    .brand-name{
+        width: 5%;
+        font-size: 20px;
+        margin-right: 10px;
+    }
     .pages{
-       margin-left: 20px;
+       margin-left: 40px;
+       width: 30%;
     }
 
     .pages li{
-        padding: 20px 7px;
+        padding: 20px 5px;
+        margin: 0px;
     }
     .pages li a{
-        padding: 15px 3px;
+        padding: 15px 0;
     }
 
+    .icons{
+        width: 10%;
+        flex-direction: column;
+    }
+
+    .discount{
+        font-size: 30px;
+        padding: 20px;
+    }
     .shop-btn{
-        padding: 15px;
+        padding: 10px;
     }
 
     .new-customer .btn{
-        width: 25%;
+        width: 35%;
         padding: 13px 0px;
         border-radius: 10px;
         margin: 20px 0 10px;
@@ -613,18 +640,18 @@ input:hover, textarea:hover{
 
 }
 
+/* SMALL SCREEN MOBILE PHONES */
 @media screen and (max-width: 380px) {
-    .icons{
+    /* .icons{
         display: none;
-    }
-
-    .pages li{
+    } */
+    /* .pages li{
         padding: 20px 12px;
     }
 
     .brand-name{
         margin-right: 5px;
-    }
+    } */
 
     .discount{
         margin-left: 15px;
@@ -636,3 +663,27 @@ input:hover, textarea:hover{
     }
 }
 
+/* VERY SMALL SCREEN MOBILE PHONES */
+@media screen and (max-width: 280px){
+    .contact-page{
+        display: none;
+    }
+
+    .shop-btn, .sign-up{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+.top{
+    font-size: 18px;
+}
+
+.media-icons a{
+    margin: 5px;
+}
+
+.discount{
+    font-size: 20px;
+}
+
+}
